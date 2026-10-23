@@ -26,6 +26,8 @@ The demo needs an early access code. It is given in the DEV submission post.
 - Access code compared in constant time; per-IP rate limits
 - Input sanitising; photo must be a JPEG data URL
 - Photos are not stored by the app
+- Model output is cleaned and length-limited, and the page shows it with `textContent`, never as HTML
+- Known limit: rate limits are kept in memory per Worker instance, so they are best-effort, not a hard cap
 
 ## Files
 
